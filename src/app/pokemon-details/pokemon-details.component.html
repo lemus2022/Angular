@@ -6,8 +6,8 @@
 <table style=" font-size: large; font-family: 'Kaushan Script', cursive; margin: auto;">
     <tr>
       <td style="padding-right: 40px; font-size: larger;"> <b>XP <br><br>{{pokemonDetails.base_experience}}  </b></td>
-      <td  style="padding-right: 40px; font-size: larger"><b> Weight<br><br> {{pokemonDetails.weight/10}} Kg</b></td>
-      <td style="margin-bottom: 100px; font-size: larger" ><b>Height<br><br> {{pokemonDetails.height/10}} m</b></td>
+      <td  style="padding-right: 40px; font-size: larger"><b> Weight<br><br> {{pokemonDetails.weight | pokeweight}}</b></td>
+      <td style="margin-bottom: 100px; font-size: larger" ><b>Height<br><br> {{pokemonDetails.height | pokeheight}} </b></td>
     </tr>
 </table>
 <div style="margin-bottom: 100px;"></div>

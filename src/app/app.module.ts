@@ -21,6 +21,10 @@ import { UpperCaseCustomPipe } from './pipes/upper-case-custom.pipe';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { PokemonWeightPipe } from './pipes/pokemon-weight-pipe';
+import { PokemonHeightPipe } from './pipes/pokemon-height-pipe';
+import { FeaturesComponent } from './components/features/features.component';
 
 
 @NgModule({
@@ -33,6 +37,11 @@ import { ErrorpageComponent } from './errorpage/errorpage.component';
     NavComponent,
     FooterComponent,
     ErrorpageComponent,
+    ContactComponent,
+    PokemonWeightPipe,
+    PokemonHeightPipe,
+    FeaturesComponent
+
   ],
   imports: [
     BrowserModule,

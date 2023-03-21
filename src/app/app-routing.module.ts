@@ -3,11 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { PokeListComponent } from './poke-list/poke-list.component';
 import { PokemonDetailsComponent } from './pokemon-details/pokemon-details.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FeaturesComponent } from './components/features/features.component';
+
 
 
 const routes: Routes = [
     { path: 'home', component: PokeListComponent },
-    { path: 'error', component: ErrorpageComponent },
+    { path: 'contact', component: ContactComponent },
+    { path: 'features', component: FeaturesComponent },
     { path: 'pokemon-details/:name', component: PokemonDetailsComponent },
     { path: '', redirectTo: 'home', pathMatch: 'full'},
     { path: '**', component: ErrorpageComponent },
