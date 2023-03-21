@@ -1,0 +1,14 @@
+<div class="text-center justify-content-center" >
+<h1 style="font-size: xx-large; font-family: 'Kaushan Script',cursive; margin-top: 25px;"><b>{{name | upperCaseCustom}}</b></h1>
+<h3 style="font-size: xx-large; font-family: 'Kaushan Script', cursive; margin-top: 25px;"><b>{{ pokemonDetails.id }}</b></h3>
+<h4 style="font-family: 'Kaushan Script', cursive; font-size: x-large;"><b>Shiny mode</b></h4>
+<img [src]="pokemonDetails.sprites.front_shiny" style="width: 350px; margin-top: 0; " alt="{{pokemonDetails.name}} image">
+<table style=" font-size: large; font-family: 'Kaushan Script', cursive; margin: auto;">
+    <tr>
+      <td style="padding-right: 40px; font-size: larger;"> <b>XP <br><br>{{pokemonDetails.base_experience}}  </b></td>
+      <td  style="padding-right: 40px; font-size: larger"><b> Weight<br><br> {{pokemonDetails.weight/10}} Kg</b></td>
+      <td style="margin-bottom: 100px; font-size: larger" ><b>Height<br><br> {{pokemonDetails.height/10}} m</b></td>
+    </tr>
+</table>
+<div style="margin-bottom: 100px;"></div>
+</div>

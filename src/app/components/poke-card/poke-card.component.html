@@ -1,0 +1,12 @@
+<mat-card class="card" style="background-color: rgb(255, 0, 0, 0.4); font-family: 'Kaushan Script', cursive;; color: black;">
+    <mat-card-header class= "h2 text-center justify-content-center">
+      <b>{{pokemon.name | upperCaseCustom}}</b>  
+    </mat-card-header>
+    <img mat-card-image [src]="pokemonDetails.sprites.front_default" alt="{{pokemonDetails.name}} image">
+    <mat-card-content>
+        
+    </mat-card-content>
+    <mat-card-actions class="justify-content-center">
+        <button id="btnDetails" class="bg-success text-light center-block" style=" font-family: 'Kaushan Script', cursive;box-shadow: 2px 2px 2px 1px white;" mat-raised-button routerLink="/pokemon-details/{{pokemonDetails.name}}"><b>Show details</b></button>
+    </mat-card-actions>
+</mat-card>
